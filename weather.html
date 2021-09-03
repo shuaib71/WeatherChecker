@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        center{
+            border: 5px solid black;
+            margin: 10% 20%;
+            padding: 5%;
+        }
+        .cityname{
+           margin: 5%;    
+           padding: 3%;
+           text-transform: uppercase;
+           background-color: aquamarine;
+           font-size: 80%;
+        }
+       .subbttn{
+           font-size: 150%;
+           color: #fff;
+           background-color:hsl(165, 100%, 30%) ;
+           display: inline-flex;
+           box-sizing: border-box;
+           width: 150px;
+           justify-content: center;
+           padding: 1%;
+           margin: 5px;
+           cursor: pointer;
+           transition: all .5s;
+           border: none;
+           border-radius: 5px;
+           text-decoration: none;
+       }
+       .subbttn :hover{
+
+       }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather Check</title>
+</head>
+<body>
+    <center>
+    <form action="weather.py" method="POST" enctype="multipart/form-data">
+        <h1>Check Your City Wheather</h1>
+        <input class="cityname" type="text" placeholder="Enter City Name" name="cityname" required><br>
+        <input class="subbttn" type="submit" name="submit" value="Submit">
+    </form>
+    </center>
+    
+</body>
+</html>
